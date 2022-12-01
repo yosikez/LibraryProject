@@ -1,16 +1,10 @@
-<div class="container">
-    
-    <div class="mt-4 mb-4 p-2 bg-primary text-white rounded">
-        <h1>Selamat Datang <?= $_SESSION['auth']->username ?></h1>
-    </div>
-
-
+<div class="header">
+    <h1>Data Librarian</h1>
+    <button class="btn btn-success"><a class="text-white text-decoration-none" href="<?= \Lib\App\Core\Router::url('/librarians/add') ?>">Add</a></button>
+</div>
+<div class="container isi">
     <div class="card">
 
-        <div class="card-header d-flex justify-content-between">
-            <h1>Data Librarian</h1>
-            <button class="btn btn-success"><a class="text-white text-decoration-none" href="<?= \Lib\App\Core\Router::url('/librarians/add') ?>">Add</a></button>
-        </div>
 
         <div class="table-wra p-3">
             <table class="table p-3">

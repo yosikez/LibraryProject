@@ -1,8 +1,9 @@
-<div class="container main form-wrap mb-5">
+<div class="header">
+    <h1>Form Data Trx Member</h1>
+    <button><a href="<?= \Lib\App\Core\Router::url('/subsmember') ?>">Back</a></button>
+</div>
+<div class="isi">
     <div class="card mt-5">
-    <div class="card-header">
-        <h3>Form Data Trx Member</h3>
-    </div>
     <form class="form p-3" action="<?= \Lib\App\Core\Router::url('/subsmember/add/save');?>" method="POST">
         <div class="form-group">
             <label for="member_id" class="form-label">Nama Member</label>:

@@ -1,8 +1,11 @@
-<div class="container main form-wrap">
-    <div class="card mt-5">
-        <div class="card-header">
-            <h3>Update Data Subscriptions</h3>
-        </div>
+<div class="header">
+    <h1>Update Data Subscriptions</h1>
+    <button><a href="<?= \Lib\App\Core\Router::url('/subscriptions') ?>">Back</a></button>
+</div>
+
+<div class="isi">
+    <div class="card">
+     
     <form class="form p-3" action="<?= \Lib\App\Core\Router::url("/subscriptions/update/$data->id/save");?>" method="POST">
         <input type="hidden" name="id" id="id" value="<?= $data->id?>">
         <div class="form-group">

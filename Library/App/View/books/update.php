@@ -1,8 +1,9 @@
-<div class="container main form-wrap mb-5">
+<div class="header">
+    <h1>Update Data Buku</h1>
+    <button class="btn btn-success"><a class="text-white text-decoration-none" href="<?= \Lib\App\Core\Router::url('/books') ?>">Back</a></button>
+</div>
+<div class="container isi">
     <div class="card mt-5">
-        <div class="card-header">
-            <h3>Update Data Buku</h3>
-        </div>
     <form class="form p-3" action="<?= \Lib\App\Core\Router::url("/books/update/$data->id/save");?>" method="POST">
     <input type="hidden" name="id" id="id" value="<?= $data->id?>">
         <div class="form-group">

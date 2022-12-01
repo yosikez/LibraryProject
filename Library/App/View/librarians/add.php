@@ -1,8 +1,9 @@
-<div class="container main form-wrap">
-    <div class="card mt-5">
-        <div class="card-header">
-            <h1>Input Data Librarian</h1>
-        </div>
+<div class="header">
+    <h1>Input Data Librarian</h1>
+    <button class="btn btn-success"><a class="text-white text-decoration-none" href="<?= \Lib\App\Core\Router::url('/librarians') ?>">Back</a></button>
+</div>
+<div class="container isi">
+    <div class="card">
         <form class="form p-3" action="<?= \Lib\App\Core\Router::url('/librarians/add/save'); ?>" method="POST">
             <div class="form-group">
                 <label for="username" class="form-label">Username</label>:

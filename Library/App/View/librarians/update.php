@@ -1,8 +1,9 @@
-<div class="container main form-wrap">
-<div class="card mt-5">
-    <div class="card-header">
-        <h3>Update Data Librarian</h3>
-    </div>
+<div class="header">
+    <h1>Update Data Librarian</h1>
+    <button class="btn btn-success"><a class="text-white text-decoration-none" href="<?= \Lib\App\Core\Router::url('/librarians') ?>">Back</a></button>
+</div>
+<div class="container isi">
+<div class="card">
 <form class="form p-3" action="<?= \Lib\App\Core\Router::url("/librarians/update/$data->id/save");?>" method="POST">
     <input type="hidden" name="id" id="id" value="<?= $data->id?>">
         <div class="form-group">

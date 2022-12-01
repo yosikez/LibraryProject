@@ -1,11 +1,11 @@
-<div class="container-fluid">
+<div class="header">
+    <h1>Data Member</h1>
+    <button class="btn btn-success"><a class="text-white text-decoration-none" href="<?= \Lib\App\Core\Router::url('/members/add') ?>">Add</a></button>
+</div>
+<div class="isi">
 
     <div class="card mt-5">
 
-        <div class="card-header d-flex justify-content-between">
-            <h1>Data Member</h1>
-            <button class="btn btn-success"><a class="text-white text-decoration-none" href="<?= \Lib\App\Core\Router::url('/members/add') ?>">Add</a></button>
-        </div>
 
         <div class="table-wra p-3">
             <table class="table p-3">

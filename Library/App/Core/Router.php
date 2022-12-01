@@ -4,7 +4,7 @@ namespace Lib\App\Core;
 class Router
 {
     private static $routes = [];
-    private static $baseUrl = 'http://localhost/Library_new/Library/Public';
+    private static $baseUrl = 'http://localhost/Library_new_css/Library/Public';
 
     public static function addRoute($method, $path, $controller, $function, $middleware = [])
     {

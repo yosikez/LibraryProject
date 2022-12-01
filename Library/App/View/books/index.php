@@ -1,14 +1,11 @@
-<div class="container">
-
-    <div class="card mt-5">
-
-        <div class="card-header d-flex justify-content-between">
-            <h1>Data Buku</h1>
-            <button class="btn btn-success"><a class="text-white text-decoration-none" href="<?= \Lib\App\Core\Router::url('/books/add') ?>">Add</a></button>
-        </div>
-
-        <div class="table-wra p-3">
-            <table class="table p-3">
+<div class="header">
+    <h1>Data Buku</h1>
+    <button class="btn btn-success"><a class="text-white text-decoration-none" href="<?= \Lib\App\Core\Router::url('/books/add') ?>">Add</a></button>
+</div>
+<div class="isi">
+    <div class="card">
+        <div class="table-wrap">
+            <table class="table">
                 <tr>
                     <td>No</td>
                     <td>ISBN</td>
@@ -38,7 +35,7 @@
                         <td><?= $dt->category ?></td>
                         <td><?= $dt->language ?></td>
                         <td><?= $dt->created_at ?></td>
-            
+
                         <td>
                             <a href="<?= Router::url('/books/update') . "/$dt->id" ?>" class="btn btn-warning">Update</a>
                             <a href="<?= Router::url('/books/delete') . "/$dt->id" ?>" class="btn btn-danger">Delete</a>

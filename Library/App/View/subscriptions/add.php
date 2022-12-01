@@ -1,8 +1,9 @@
-<div class="container main form-wrap">
-    <div class="card mt-5">
-        <div class="card-header">
-            <h3>Form Input Data Subscriptions</h3>
-        </div>
+<div class="header">
+    <h1>Form Input Data Subscriptions</h1>
+    <button><a href="<?= \Lib\App\Core\Router::url('/subscriptions') ?>">Back</a></button>
+</div>
+<div class="isi">
+    <div class="card">
     <form class="form p-3" action="<?= \Lib\App\Core\Router::url('/subscriptions/add/save');?>" method="POST">
         <div class="form-group">
             <label for="title" class="form-label">Nama Paket</label>:

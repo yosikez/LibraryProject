@@ -1,8 +1,9 @@
-<div class="container main form-wrap mb-5">
+<div class="header">
+    <h1>Update Data Member</h1>
+    <button><a href="<?= \Lib\App\Core\Router::url('/members') ?>">Back</a></button>
+</div>
+<div class="isi">
     <div class="card mt-5">
-        <div class="card-header">
-            <h1>Update Data Member</h1>
-        </div>
     <form class="form p-3" action="<?= \Lib\App\Core\Router::url("/members/update/$data->id/save");?>" method="POST">
     <input type="hidden" name="id" id="id" value="<?= $data->id?>">
         <div class="form-group">
